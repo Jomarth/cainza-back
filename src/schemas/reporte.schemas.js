@@ -22,5 +22,4 @@ export const reporteSchema = z.object({
     obra: z.string({
         required_error: "La obra asociada es obligatoria"
     })
-
 })
