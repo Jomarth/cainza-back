@@ -9,6 +9,7 @@ router.post('/obras', validateSchema(obraSchema), createObras);
 router.get('/obras', getObras);
 router.get('/obras/:id', getObra);
 router.put('/obras/:id', updateObra);
+router.put('/obras/:id', validateSchema(obraSchema), updateObra);
 router.delete('/obras/:id', deleteObra);
 
 export default router;

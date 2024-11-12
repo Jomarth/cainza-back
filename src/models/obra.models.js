@@ -10,7 +10,7 @@ const numberRule = {
     required: true,
 };
 
-const obraSchema = new mongoose.Schema({
+const obraModel = new mongoose.Schema({
     nombre: stringRule,
     dependencia: stringRule,
     contratista: stringRule,
@@ -23,4 +23,4 @@ const obraSchema = new mongoose.Schema({
     timestamps: true
 })
 
-export default mongoose.model('Obra', obraSchema);
+export default mongoose.model('Obra', obraModel);
