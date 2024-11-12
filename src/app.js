@@ -5,6 +5,7 @@ import authRoutes from "./routes/auth.routes.js";
 import obraRoutes from "./routes/obra.routes.js";
 import reporteRoutes from "./routes/reporte.routes.js";
 import ensayeRoutes from "./routes/ensaye.routes.js";
+import granulometriaRoutes from "./routes/granulometria.routes.js";
 
 const app = express();
 app.use(cors({
@@ -17,5 +18,6 @@ app.use('/api/', authRoutes);
 app.use('/api/', obraRoutes);
 app.use('/api/', reporteRoutes);
 app.use('/api/', ensayeRoutes);
+app.use('/api/', granulometriaRoutes);
 
 export default app;
