@@ -17,6 +17,7 @@ const obraModel = new mongoose.Schema({
     estado: stringRule,
     importe: numberRule,
     tramo: stringRule,
+    imagen: stringRule,
     fecha_inicio: stringRule,
     fecha_fin: stringRule
 }, {

@@ -1,1 +1,1 @@
-export const TOKEN_SECRET = 'maoaches.2024#';
+export const TOKEN_SECRET = 'mapaches.2024#';

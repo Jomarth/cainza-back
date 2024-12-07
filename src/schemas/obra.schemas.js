@@ -19,6 +19,9 @@ export const obraSchema = z.object({
     tramo: z.string({
         required_error: 'El tramo obligatorio',
     }),
+    imagen: z.string({
+        required_error: 'La imagen es obligatoria',
+    }),
     fecha_inicio: z.string({
         required_error: 'La fecha de inicio es obligatoria',
     }),
