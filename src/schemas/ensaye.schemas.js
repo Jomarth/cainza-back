@@ -22,9 +22,6 @@ export const ensayeSchema = z.object({
     fecha_entrega: z.string({
         required_error: 'La fecha de entrega es requerida'
     }),
-    tipo: z.string({
-        required_error: 'El tipo de ensaye es requerido'
-    }),
     capa: z.string({
         required_error: 'El tipo de capa es requerido'
     }),

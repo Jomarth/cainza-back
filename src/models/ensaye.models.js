@@ -11,18 +11,17 @@ const numberRule = {
 };
 
 const ensayeModel = new mongoose.Schema({
-    solicitante: stringRule,
-    norma: stringRule,
-    fecha_muestreo: stringRule,
-    localizacion: stringRule,
-    ubicacion_muestra: stringRule,
-    tipo_material: stringRule,
+    solicitante: stringRule,//
+    norma: stringRule,//
+    fecha_muestreo: stringRule,//
+    localizacion: stringRule,//
+    ubicacion_muestra: stringRule,//
+    tipo_material: stringRule,//
     fecha_entrega: stringRule,
-    tipo: stringRule,
-    capa: stringRule,
-    masa_muestra: stringRule,
-    peso_volumetrico: numberRule,
-    masa_alterada: numberRule,
+    capa: stringRule,//
+    masa_muestra: stringRule,//
+    peso_volumetrico: numberRule,//
+    masa_alterada: numberRule,//
     tipo_granulometria: numberRule,
     volumen_tara: numberRule,
     desperdicio: stringRule,
