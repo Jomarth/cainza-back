@@ -5,10 +5,16 @@ import authRoutes from "./routes/auth.routes.js";
 import obraRoutes from "./routes/obra.routes.js";
 import reporteRoutes from "./routes/reporte.routes.js";
 import ensayeRoutes from "./routes/ensaye.routes.js";
+import dotenv from 'dotenv';
 
+
+dotenv.config();
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: ['http://localhost:5173',
+        'http://localhost:4000/api',
+        process.env.BASE_URL,
+        process.env.BASE_URL_FRONTEND],
     credentials: true
 }));
 app.use(morgan('dev'));

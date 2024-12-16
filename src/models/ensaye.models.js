@@ -18,7 +18,6 @@ const ensayeModel = new mongoose.Schema({
     ubicacion_muestra: stringRule,
     tipo_material: stringRule,
     fecha_entrega: stringRule,
-    tipo: stringRule,
     capa: stringRule,
     masa_muestra: stringRule,
     peso_volumetrico: numberRule,
