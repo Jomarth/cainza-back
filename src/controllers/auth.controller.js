@@ -24,7 +24,7 @@ export const register = async (req, res) => {
         }); //guardamos el modelo en mongodb
         const token = await createAccessToken({id: userSaved._id});
         res.cookie('token', token, {
-           // httpOnly: true,
+            httpOnly: true,
             sameSite: 'none',
             secure: true
         });
@@ -52,7 +52,7 @@ export const login = async (req, res) => {
 
         const token = await createAccessToken({id: userFound._id});
         res.cookie('token', token, {
-            // httpOnly: true,
+            httpOnly: true,
             sameSite: 'none',
             secure: true
         });
