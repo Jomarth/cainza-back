@@ -7,9 +7,11 @@ import reporteRoutes from "./routes/reporte.routes.js";
 import ensayeRoutes from "./routes/ensaye.routes.js";
 import dotenv from 'dotenv';
 
-
 dotenv.config();
 const app = express();
+
+console.log(process.env.BASE_URL);
+console.log(process.env.BASE_URL_FRONTEND);
 app.use(cors({
     origin: ['http://localhost:5173',
         'http://localhost:4000/api',
